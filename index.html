@@ -228,7 +228,7 @@ footer{background:var(--navy);color:#C9D2D7;padding-block:56px 36px}
       <a class="nl" href="#results">Results</a>
       <a class="nl" href="#packages">Packages</a>
       <a class="nl" href="#contact">Contact</a>
-      <a class="btn" href="https://calendly.com/emiliya-sivankova/30min" target="_blank" rel="noopener" data-calendly>Book a free call</a>
+      <a class="btn" href="https://cal.com/socialsbyemi/intro-call" target="_blank" rel="noopener" data-booking>Book a free call</a>
     </nav>
   </div>
 </header>
@@ -242,7 +242,7 @@ footer{background:var(--navy);color:#C9D2D7;padding-block:56px 36px}
         <p class="lede">I help gyms, padel clubs and fitness studios turn followers into members, bookings and a long waitlist.</p>
         <div class="cta">
           <a class="btn" href="#packages">Work with Me</a>
-          <a class="btn ghost" href="https://calendly.com/emiliya-sivankova/30min" target="_blank" rel="noopener" data-calendly>Free 30-min intro call</a>
+          <a class="btn ghost" href="https://cal.com/socialsbyemi/intro-call" target="_blank" rel="noopener" data-booking>Free 30-min intro call</a>
         </div>
       </div>
       <div class="photo">
@@ -429,7 +429,7 @@ footer{background:var(--navy);color:#C9D2D7;padding-block:56px 36px}
         <p class="eyebrow">Contact</p>
         <h2>Get in Touch!</h2>
         <p>Book a free 30-minute intro call, or send me a message about your business and I'll reply within one working day.</p>
-        <a class="btn" href="https://calendly.com/emiliya-sivankova/30min" target="_blank" rel="noopener" data-calendly style="justify-self:start">Book your free intro call</a>
+        <a class="btn" href="https://cal.com/socialsbyemi/intro-call" target="_blank" rel="noopener" data-booking style="justify-self:start">Book your free intro call</a>
         <div class="direct">
           <div><small>Email</small><a href="mailto:hello@emiliyasivankova.co.uk">hello@emiliyasivankova.co.uk</a></div>
           <div><small>Instagram</small><a href="https://www.instagram.com/socialsbyemi/" target="_blank" rel="noopener">@socialsbyemi</a></div>
@@ -485,9 +485,9 @@ footer{background:var(--navy);color:#C9D2D7;padding-block:56px 36px}
 </footer>
 
 <script>
-// Paste the Calendly link here once it exists; every "Book" button will use it.
-const CALENDLY = "https://calendly.com/emiliya-sivankova/30min";
-if (CALENDLY) document.querySelectorAll("[data-calendly]").forEach(a => { a.href = CALENDLY; a.target = "_blank"; a.rel = "noopener"; });
+// Booking link for the free intro call; every "Book" button uses it.
+const BOOKING = "https://cal.com/socialsbyemi/intro-call";
+if (BOOKING) document.querySelectorAll("[data-booking]").forEach(a => { a.href = BOOKING; a.target = "_blank"; a.rel = "noopener"; });
 
 const pkgMap = {"Essentials":2,"Growth":3,"Full Support":4,"Strategy Session":1,"Custom":5};
 document.querySelectorAll("[data-package]").forEach(a => a.addEventListener("click", () => {
