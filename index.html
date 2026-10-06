@@ -361,15 +361,15 @@ footer{background:var(--navy);color:#C9D2D7;padding-block:56px 36px}
 
       <div class="extras">
         <article class="extra session" id="session">
-          <div class="extra-top"><h3>Strategy Session</h3><span class="p">£195 <small>one-off</small></span></div>
-          <p>Want expert eyes on your account before committing? Perfect if you'd like to try working with me, or prefer to run your socials yourself.</p>
+          <div class="extra-top"><h3>Strategy Plan</h3><span class="p">£195 <small>one-off</small></span></div>
+          <p>A 60-minute call plus a written plan you can run yourself. Want expert eyes on your account before committing? Perfect if you'd like to try working with me, or prefer to run your socials yourself.</p>
           <ul>
             <li>I review your account before we speak</li>
             <li>60-minute call: what's working, what isn't, what to post next</li>
-            <li>Short written action plan sent afterwards</li>
+            <li>Your written strategy plan, sent afterwards</li>
             <li>Join a package within 30 days and the £195 comes off your first month</li>
           </ul>
-          <a class="btn" href="https://cal.com/socialsbyemi/strategy-plan" target="_blank" rel="noopener">Book a Strategy Session</a>
+          <a class="btn" href="https://cal.com/socialsbyemi/strategy-plan" target="_blank" rel="noopener">Book a Strategy Plan</a>
         </article>
         <article class="extra custom">
           <div class="extra-top"><h3>Custom</h3><span class="p" style="font-size:20px">Priced per request</span></div>
@@ -449,7 +449,7 @@ footer{background:var(--navy);color:#C9D2D7;padding-block:56px 36px}
         <div class="field"><label for="f-pkg">I'm interested in</label>
           <select id="f-pkg" name="package">
             <option>Not sure yet</option>
-            <option>Strategy Session (£195)</option>
+            <option>Strategy Plan (£195)</option>
             <option>Essentials (£800/month)</option>
             <option>Growth (£1,200/month)</option>
             <option>Full Support (£2,200/month)</option>
@@ -489,7 +489,7 @@ footer{background:var(--navy);color:#C9D2D7;padding-block:56px 36px}
 const BOOKING = "https://cal.com/socialsbyemi/intro-call";
 if (BOOKING) document.querySelectorAll("[data-booking]").forEach(a => { a.href = BOOKING; a.target = "_blank"; a.rel = "noopener"; });
 
-const pkgMap = {"Essentials":2,"Growth":3,"Full Support":4,"Strategy Session":1,"Custom":5};
+const pkgMap = {"Essentials":2,"Growth":3,"Full Support":4,"Strategy Plan":1,"Custom":5};
 document.querySelectorAll("[data-package]").forEach(a => a.addEventListener("click", () => {
   document.getElementById("f-pkg").selectedIndex = pkgMap[a.dataset.package];
 }));
