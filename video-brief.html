@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Your video brief | Socials by Emiliya</title>
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&display=swap">
+<link rel="stylesheet" href="/sub.css">
+</head>
+<body>
+<header>
+  <div class="wrap bar">
+    <a class="logo" href="/" aria-label="Socials by Emiliya, home"><img src="/logo-navy.png" alt="Emiliya Sivankova, Social Media Marketing Manager"></a>
+  </div>
+</header>
+
+<main>
+  <section class="page-hero">
+    <div class="wrap narrow">
+      <p class="eyebrow">Video brief</p>
+      <h1>Let's make your <em>Reel.</em></h1>
+      <p class="thanks" id="paid" hidden>Payment received, thank you! Fill this in and send your files, and I'll confirm your delivery date by email.</p>
+      <p class="lede">This takes about 5 minutes. The more you tell me, the closer the first draft will be.</p>
+    </div>
+  </section>
+
+  <div class="wrap narrow">
+    <form id="video-brief" name="video-brief" method="POST" data-netlify="true" netlify-honeypot="company-website" action="/video-brief?sent=1">
+      <input type="hidden" name="form-name" value="video-brief">
+      <p hidden><label>Leave this empty<input name="company-website"></label></p>
+
+      <fieldset>
+        <legend>About you</legend>
+        <div class="row">
+          <label for="b-name">Your name<input id="b-name" name="name" autocomplete="name" required></label>
+          <label for="b-email">Email (the one you paid with)<input id="b-email" name="email" type="email" autocomplete="email" required></label>
+        </div>
+        <div class="row">
+          <label for="b-biz">Club, studio or business<input id="b-biz" name="business" autocomplete="organization" required></label>
+          <label for="b-ig">Instagram handle<input id="b-ig" name="instagram" placeholder="@yourclub"></label>
+        </div>
+        <label for="b-order">What did you order?
+          <select id="b-order" name="order" required>
+            <option value="">Choose one</option>
+            <option>Reel edit (£300)</option>
+            <option>Rush Reel (£430)</option>
+          </select>
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <legend>The video</legend>
+        <label for="b-goal">What's the video for?<span class="hint">For example: thanking sponsors, promoting an event, an athlete's season highlights, new members.</span><textarea id="b-goal" name="goal" required></textarea></label>
+        <div class="row">
+          <label for="b-where">Where will it be posted?<input id="b-where" name="platforms" placeholder="Instagram, TikTok, YouTube Shorts..."></label>
+          <label for="b-len">Rough length<select id="b-len" name="length"><option>Up to 30 seconds</option><option selected>30 to 60 seconds</option><option>You decide</option></select></label>
+        </div>
+        <label for="b-date">When does it need to go live?<input id="b-date" name="live_date" type="date"></label>
+        <label for="b-text">Text, names or messages that must appear<span class="hint">Event name, dates, athlete names, sponsors to thank, a call to action.</span><textarea id="b-text" name="must_include"></textarea></label>
+        <label for="b-refs">Videos you like the style of<span class="hint">Paste links to any Reels or TikToks you'd like it to feel like.</span><textarea id="b-refs" name="references"></textarea></label>
+        <label for="b-music">Music
+          <select id="b-music" name="music">
+            <option>Upbeat and energetic</option>
+            <option>Emotional and cinematic</option>
+            <option>Calm and clean</option>
+            <option>No music, I'll add trending audio in the app</option>
+            <option>I'll send my own licensed track</option>
+          </select>
+        </label>
+        <label for="b-avoid">Anything to avoid?<span class="hint">People who shouldn't appear, colours, clips you don't like.</span><textarea id="b-avoid" name="avoid"></textarea></label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Your files</legend>
+        <div class="callout"><b>How to send files:</b> go to <a href="https://wetransfer.com" target="_blank" rel="noopener">wetransfer.com</a> (free, no account needed), add your clips, photos and logos, and send them to <b>hello@emiliyasivankova.co.uk</b>. Or share a Google Drive or Dropbox folder with that address.</div>
+        <label for="b-files">Link to your files, or "Sent by WeTransfer"<input id="b-files" name="files_link" required></label>
+        <label for="b-yt">YouTube or Instagram links to use<span class="hint">One per line, with timestamps if you only want part of a clip.</span><textarea id="b-yt" name="video_links"></textarea></label>
+        <label for="b-brand">Brand colours and fonts, if you have them<input id="b-brand" name="brand" placeholder="e.g. navy #1B2242, Montserrat"></label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Extras</legend>
+        <div class="checks">
+          <span class="lab">Add-ons (invoiced separately)</span>
+          <label class="check"><input type="checkbox" name="addons" value="Extra format 16:9 (£60)"> <span>Extra 16:9 version (£60)</span></label>
+          <label class="check"><input type="checkbox" name="addons" value="Extra format 1:1 (£60)"> <span>Extra 1:1 version (£60)</span></label>
+          <label class="check"><input type="checkbox" name="addons" value="Teaser cut (£60)"> <span>Short teaser cut, up to 15s (£60)</span></label>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Last bits</legend>
+        <div class="checks">
+          <label class="check"><input type="checkbox" name="rights" value="Confirmed" required> <span>I own, or have permission to use, all the footage, photos, logos and music I'm sending, including any YouTube or Instagram clips.</span></label>
+          <label class="check"><input type="checkbox" name="terms" value="Agreed" required> <span>I've read and agree to the <a href="/video-terms" target="_blank">video editing terms</a>.</span></label>
+          <label class="check"><input type="checkbox" name="portfolio_opt_out" value="Please don't use in portfolio"> <span>Please don't show this video in your portfolio or on social media.</span></label>
+        </div>
+      </fieldset>
+
+      <button class="btn" type="submit">Send my brief</button>
+      <p class="sent" id="sent" hidden>Brief sent! I'll email you within one working day to confirm your delivery date.</p>
+    </form>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot">
+      <div>
+        <img src="/logo-white.png" alt="Emiliya Sivankova">
+        <p class="tagline">Social media for sports and fitness venues</p>
+      </div>
+      <div class="foot-links">
+        <a href="/">Home</a>
+        <a href="/video-editing">Video editing</a>
+        <a href="/video-terms">Video editing terms</a>
+      </div>
+    </div>
+    <p class="copy">© 2026 Emiliya Sivankova. All rights reserved.</p>
+  </div>
+</footer>
+
+<script>
+const q = new URLSearchParams(location.search);
+if (q.has("paid")) document.getElementById("paid").hidden = false;
+if (q.get("order") === "rush") document.getElementById("b-order").selectedIndex = 2;
+if (q.get("order") === "standard") document.getElementById("b-order").selectedIndex = 1;
+if (q.has("sent")) {
+  const f = document.getElementById("video-brief");
+  [...f.children].forEach(el => { if (el.id !== "sent") el.hidden = true; });
+  document.getElementById("sent").hidden = false;
+}
+const live = location.hostname.endsWith("emiliyasivankova.co.uk") || location.hostname.endsWith("netlify.app");
+if (!live) document.getElementById("video-brief").addEventListener("submit", e => { e.preventDefault(); document.getElementById("sent").hidden = false; });
+</script>
+</body>
+</html>
