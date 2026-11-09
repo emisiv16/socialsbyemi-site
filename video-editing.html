@@ -166,7 +166,7 @@
 
 <script>
 // Stripe Payment Links. Paste each link between the quotes once created.
-const STRIPE = { standard: "", rush: "" };
+const STRIPE = { standard: "https://buy.stripe.com/5kQ00j1Rc70R9eV8PP7EQ01", rush: "https://buy.stripe.com/6oU3cvgM6clb76N8PP7EQ03" };
 document.querySelectorAll("[data-stripe]").forEach(a => {
   const url = STRIPE[a.dataset.stripe];
   if (url) a.href = url;
