@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Your Strategy Plan brief | Socials by Emiliya</title>
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&display=swap">
+<link rel="stylesheet" href="/sub.css">
+</head>
+<body>
+<header>
+  <div class="wrap bar">
+    <a class="logo" href="/" aria-label="Socials by Emiliya, home"><img src="/logo-navy.png" alt="Emiliya Sivankova, Social Media Marketing Manager"></a>
+    
+  </div>
+</header>
+
+<main>
+  <section class="page-hero">
+    <div class="wrap narrow">
+      <p class="eyebrow">Strategy Plan</p>
+      <h1>Before we <em>talk.</em></h1>
+      <p class="thanks" id="booked" hidden>You're booked in, thank you! Your confirmation email is on its way. Please fill this in at least 48 hours before your call.</p>
+      <p class="lede">This takes about 10 minutes, and it's how I make your 60 minutes count. I'll review your accounts before we speak, so the call goes straight to what matters.</p>
+    </div>
+  </section>
+
+  <div class="wrap narrow">
+    <form id="strategy-brief" name="strategy-brief" method="POST" data-netlify="true" netlify-honeypot="company-website" action="/strategy-brief?sent=1">
+      <input type="hidden" name="form-name" value="strategy-brief">
+      <p hidden><label>Leave this empty<input name="company-website"></label></p>
+
+      <fieldset>
+        <legend>About you</legend>
+        <div class="row">
+          <label for="s-name">Your name<input id="s-name" name="name" autocomplete="name" required></label>
+          <label for="s-email">Email (the one you booked with)<input id="s-email" name="email" type="email" autocomplete="email" required></label>
+        </div>
+        <div class="row">
+          <label for="s-biz">Club, studio or business<input id="s-biz" name="business" autocomplete="organization" required></label>
+          <label for="s-where">Where are you based?<input id="s-where" name="location" placeholder="Town or city, country" required></label>
+        </div>
+        <div class="row">
+          <label for="s-ig">Instagram handle<input id="s-ig" name="instagram" placeholder="@yourclub" required></label>
+          <label for="s-web">Website<input id="s-web" name="website" placeholder="Optional"></label>
+        </div>
+        <label for="s-other">Other accounts you'd like me to look at<span class="hint">TikTok, Facebook, LinkedIn or a second Instagram.</span><input id="s-other" name="other_accounts"></label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Your business</legend>
+        <label for="s-offer">What do you offer, and what are your prices?<span class="hint">Memberships, classes, courts, personal training, events.</span><textarea id="s-offer" name="offer" required></textarea></label>
+        <label for="s-best">Describe 2 or 3 of your favourite customers or members<span class="hint">Who are they, and why did they choose you?</span><textarea id="s-best" name="best_customers" required></textarea></label>
+        <label for="s-busy">When are you busy, and when are you quiet?<span class="hint">Times of day, days of the week and times of year.</span><textarea id="s-busy" name="busy_quiet"></textarea></label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Your social media now</legend>
+        <div class="row">
+          <label for="s-who">Who posts at the moment?
+            <select id="s-who" name="who_posts" required>
+              <option value="">Choose one</option>
+              <option>Me</option>
+              <option>A team member</option>
+              <option>An agency or freelancer</option>
+              <option>No one at the moment</option>
+            </select>
+          </label>
+          <label for="s-time">Time you can give social media each week
+            <select id="s-time" name="time_per_week" required>
+              <option value="">Choose one</option>
+              <option>Under 1 hour</option>
+              <option>1 to 3 hours</option>
+              <option>3 to 5 hours</option>
+              <option>More than 5 hours</option>
+            </select>
+          </label>
+        </div>
+        <label for="s-worked">What's worked best so far, and what hasn't?<textarea id="s-worked" name="what_worked"></textarea></label>
+        <label for="s-ads">Do you run paid ads?
+          <select id="s-ads" name="ads">
+            <option>No ads yet</option>
+            <option>Under £300 a month</option>
+            <option>£300 to £1,000 a month</option>
+            <option>Over £1,000 a month</option>
+            <option>Not sure</option>
+          </select>
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <legend>The call</legend>
+        <label for="s-goal">What do you most want social media to do for you in the next 3 months?<span class="hint">For example, more trial bookings, more members, fuller off-peak sessions.</span><textarea id="s-goal" name="goal" required></textarea></label>
+        <label for="s-qs">Your top 3 questions for the call<textarea id="s-qs" name="questions" required></textarea></label>
+        <label for="s-else">Anything else I should know?<textarea id="s-else" name="anything_else"></textarea></label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Last bits</legend>
+        <div class="checks">
+          <label class="check"><input type="checkbox" name="recording" value="OK to record"> <span>I'm happy for the call to be recorded so you can write my plan (deleted within 30 days of sending it).</span></label>
+          <label class="check"><input type="checkbox" name="terms" value="Agreed" required> <span>I've read and agree to the <a href="/strategy-terms" target="_blank">Strategy Plan terms</a>.</span></label>
+        </div>
+      </fieldset>
+
+      <button class="btn" type="submit">Send my brief</button>
+      <p class="sent" id="sent" hidden>Brief sent, thank you! I'll review your accounts before our call. See you soon.</p>
+    </form>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot">
+      <div>
+        <img src="/logo-white.png" alt="Emiliya Sivankova">
+        <p class="tagline">Social media for sports and fitness venues</p>
+      </div>
+      <div class="foot-links">
+        <a href="/">Home</a>
+        <a href="/video-editing">Video editing</a>
+        <a href="/terms">Terms</a>
+        <a href="/privacy">Privacy</a>
+        <a href="https://www.instagram.com/socialsbyemi/" target="_blank" rel="noopener">Instagram</a>
+      </div>
+    </div>
+    <p class="copy">© 2026 Emiliya Sivankova. All rights reserved.</p>
+  </div>
+</footer>
+<script>
+const q = new URLSearchParams(location.search);
+if (q.has("booked")) document.getElementById("booked").hidden = false;
+if (q.has("sent")) {
+  const f = document.getElementById("strategy-brief");
+  [...f.children].forEach(el => { if (el.id !== "sent") el.hidden = true; });
+  document.getElementById("sent").hidden = false;
+}
+const live = location.hostname.endsWith("emiliyasivankova.co.uk") || location.hostname.endsWith("netlify.app");
+if (!live) document.getElementById("strategy-brief").addEventListener("submit", e => { e.preventDefault(); document.getElementById("sent").hidden = false; });
+</script>
+</body>
+</html>
